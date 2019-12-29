@@ -1,0 +1,279 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+
+body
+{
+    background-image: url('../resource/store.png');
+    /*background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;*/
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    /* You may add things like width, height, background-size... */
+}
+
+div
+{
+	font-family: "chalk";
+	font-size:40px;
+	position:absolute;
+	top: 450px;
+	left: 650px;
+	width: 500px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+}
+span:hover
+{
+	color:pink;
+	font-weight: bold;
+}
+
+.btn
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: chalk;
+	
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 20px;
+	position: absolute;
+	width: 13%;
+}
+.btn:hover 
+{
+	background-color: #555555;
+	color: white;
+	
+}
+
+img
+{
+	width:20%;
+	position: absolute;
+	top:120px;
+	left:40%;
+	z-index:0;
+}
+
+p
+{
+	position: absolute;
+	top:110px;
+	left:42%;
+	font-family: chalk;
+	font-size:30px;
+	text-align:center;
+	z-index:0;
+}
+
+.pearl
+{
+	position: absolute;
+	top:170px;
+	left:7%;
+}
+
+.tea
+{
+	position: absolute;
+	top:320px;
+	left:7%;
+}
+
+.milk
+{
+	position: absolute;
+	top:480px;
+	left:7%;
+}
+
+.powder
+{
+	position: absolute;
+	top:170px;
+	left:22%;
+	
+}
+
+.sugar
+{
+	position: absolute;
+	top:320px;
+	left:22%;
+}
+
+.ice
+{
+	position: absolute;
+	top:480px;
+	left:22%;
+}
+
+.buy
+{
+	width:12%;
+	position: absolute;
+	top:650px;
+	left:23%;
+	
+	border: 2px solid #555555;
+	border-radius: 50%;
+}
+
+.go
+{
+	width:12%;
+	position: absolute;
+	top:650px;
+	left:150px;
+	
+	border: 2px solid #555555;
+	border-radius: 50%;
+}
+
+table
+{
+	position:absolute;
+	width:25%;
+	height:80%;
+	font-family: chalk;
+	font-size: 30px;
+	text-align:center;
+	font-weight: bold;
+	background-color: white;
+	top:60px;
+	right:80px;
+}
+tr:hover
+{
+	background-color: #ADD8E6;
+}
+
+#found
+{
+	position:absolute;
+	top:60px;
+	left: 5%;
+	font-size:35px;
+}
+
+#buying
+{
+	position: absolute;
+	top:50px;
+	left: 25%;
+	z-index:1;
+}
+
+#checkout
+{
+	z-index:0;
+}
+
+
+.buying
+{
+	width: 80%;
+}
+
+.frame
+{
+	width: 25%;
+	position: absolute;
+	top: 0px;
+	left: 1%;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #40e0d0;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+

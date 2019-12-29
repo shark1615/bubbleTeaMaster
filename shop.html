@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成為珍珠奶茶大師吧!!</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/shop.css">
+		<script src = "js/shop.js"></script>
+		<script src = "js/jquery-3.4.1.js"></script>
+	</head>
+	
+	
+	<body>
+		<img src="resource/conversation.png">
+		<img src="resource/found_alert.png" class="frame">
+		<p id="conversation">要買甚麼嗎?</p>
+
+		<button id="pearl" type="button" class="btn pearl">珍珠類</button>
+		<button id="tea" type="button" class="btn tea">茶類</button>
+		<button id="milk" type="button" class="btn milk">奶類</button>
+		<button id="powder" type="button" class="btn powder">調味粉類</button>
+		<button id="sugar" type="button" class="btn sugar">糖類</button>
+		<button id="ice" type="button" class="btn ice">冰塊</button>
+
+		<button id="buy" type="button" class="btn buy">買下去</button>
+		<button id="go" type="button" class="btn go" onclick="location.replace('cook.html')">調配GO!</button>
+		<table border = "1">
+			<thead>
+				<tr>
+					<th colspan="2">你目前擁有的材料</th>
+				</tr>
+			</thead>
+			
+			<tbody id="bag">
+			</tbody>
+		</table>
+		
+		<div id="checkout" class='age__toggle'>
+		</div>
+		
+		<div id="found">
+		</div>
+		
+		<div id="buying">
+		</div>
+	</body>
+	
+</html>

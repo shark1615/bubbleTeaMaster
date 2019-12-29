@@ -1,0 +1,284 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+
+body
+{
+    background-image: url('../resource/judge_background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    /*z-index: -1;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);*/
+    font-family: "chalk";
+    font-size: 24px;
+}
+
+
+.btn
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: chalk;
+	
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 20px;
+	position: absolute;
+	width: 13%;
+}
+
+.btn:hover 
+{
+	background-color: #555555;
+	color: white;
+	
+}
+
+#judge1
+{
+    position: absolute;
+    width: 15%;
+    left:7%;
+    top:40%;
+}
+
+
+#judge2
+{
+    position: absolute;
+    width: 17%;
+    left:24%;
+    top:40%;
+}
+
+#judge3
+{
+    position: absolute;
+    width: 12%;
+    left:42%;
+    top:38%;
+}
+
+#judge4
+{
+    position: absolute;
+    width: 12%;
+    left:58%;
+    top:40%;
+}
+
+#judge5
+{
+    position: absolute;
+    width: 12%;
+    left:75%;
+    top:38%;
+}
+
+#conversation1
+{
+    position: absolute;
+    top:180px;
+    left:4%;
+}
+
+#conversation2, span#msg2
+{
+    position: absolute;
+    top:180px;
+    left:22%;
+}
+
+#conversation3, span#msg3
+{
+    position: absolute;
+    top:170px;
+    left:40%;
+}
+
+#conversation4, span#msg4
+{
+    position: absolute;
+    top:180px;
+    left:58%;
+}
+
+#conversation5, span#msg5
+{
+    position: absolute;
+    top:170px;
+    left:76%;
+}
+
+span#msg1
+{
+    position: absolute;
+    top:210px;
+    left:6%;
+}
+
+span#msg2
+{
+    position: absolute;
+    top:210px;
+    left:25%;
+}
+
+span#msg3
+{
+    position: absolute;
+    top:200px;
+    left:42%;
+}
+
+span#msg4
+{
+    position: absolute;
+    top:210px;
+    left:60%;
+}
+
+span#msg5
+{
+    position: absolute;
+    top:200px;
+    left:78%;
+}
+
+#resultIMG
+{
+    position : absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    
+}
+
+#winAnimate1
+{
+    z-index: 3;
+    position: absolute;
+    animation-name:winAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    left:45%;
+    top:50%;
+}
+#winAnimate2
+{
+    z-index: 3;
+    position: absolute;
+    left:32%;
+    top:50%;
+    width: 15%;
+    animation-name:winAnimation2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+#loseAnimate1
+{
+    z-index: 3;
+    position: absolute;
+    animation-name:loseAnimation1;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    width: 30%;
+    left:30%;
+    top:50%;
+}
+
+#loseAnimate2
+{
+    z-index: 3;
+    position: absolute;
+    left:60%;
+    top:50%;
+    width: 15%;
+    animation-name:loseAnimation2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+#returnAnimate
+{
+    z-index: 3;
+    position: absolute;
+    left:40%;
+    top:45%;
+    width: 20%;
+    animation-name: returnAnimation;
+    animation-duration:3s;
+    animation-iteration-count:1;
+}
+
+p
+{
+    z-index: 4;
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+}
+
+#restartButton
+{
+    z-index:4;
+    position: absolute;
+    left: 60%;
+    top:80%;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+@keyframes winAnimation
+{
+    from {left:-100px;top:50%;-webkit-transform:scale(1);}
+   
+    to{left:45%;top:50%;-webkit-transform:scale(1);}
+}
+
+@keyframes winAnimation2
+{
+    from {left:-300px;top:50%;-webkit-transform:scale(1);}
+   
+    to{left:32%;top:50%;-webkit-transform:scale(1);}
+}
+
+@keyframes loseAnimation1
+{
+    from {left:-800px;top:50%;-webkit-transform:scale(1);}
+   
+    to{left:30%;top:50%;-webkit-transform:scale(1);}
+}
+
+@keyframes loseAnimation2
+{
+    from {left:-300px;top:50%;-webkit-transform:scale(1);}
+   
+    to{left:60%;top:50%;-webkit-transform:scale(1);}
+}
+
+@keyframes returnAnimation
+{
+    from {left:40%;top:45%;-webkit-transform:scale(0.5);}
+   
+    to{left:40%;top:45%;-webkit-transform:scale(1.2);}
+}

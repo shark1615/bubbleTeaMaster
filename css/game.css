@@ -1,0 +1,67 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+div
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align : center;
+}
+.npc
+{
+	width:30%;
+	height:30%;
+	vertical-align : middle;
+	position: relative;
+	top:100px;
+}
+#shop
+{
+	width:10%;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+}
+#cook
+{
+	width:10%;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+}
+
+#shop:hover
+{
+	width:11%;
+	
+}
+#cook:hover
+{
+	width:11%;
+	
+}
+
+p
+{
+	font-family: chalk;
+	font-size: 30px;
+	position: absolute;
+	writing-mode: vertical-rl;
+	top:200px;
+	left:550px;
+	color:white;
+}
+
+body
+{
+    background-image: url('../resource/game_background.png');
+    /*background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;*/
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    /* You may add things like width, height, background-size... */
+}

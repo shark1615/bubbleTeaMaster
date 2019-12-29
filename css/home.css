@@ -1,0 +1,128 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+.center
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 4%;
+	position: absolute;
+	top: 250px;
+	left: 690px;
+}
+.float0
+{
+	width: 12%;
+	position: absolute;
+	top: 10px;
+	left: 650px;
+}
+.float1
+{
+	width: 11%;
+	position: absolute;
+	top: 180px;
+	left: 450px;
+}
+.float2
+{
+	width: 12%;
+	position: absolute;
+	top: 200px;
+	left: 850px;
+}
+
+.btn
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: chalk;
+}
+
+.btn:hover 
+{
+	background-color: #555555;
+	color: white;
+}
+
+.rule
+{
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 12px;
+	position: absolute;
+	top: 400px;
+	left: 450px;
+}
+
+.game
+{
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 12px;
+	position: absolute;
+	top: 400px;
+	left: 850px;
+}
+
+.note
+{
+	position:absolute;
+	width: 10%;
+	bottom: 30px;
+	right:30px;
+}
+
+p
+{
+	position: absolute;
+	top: 620px;
+	left: 700px;
+	font-family: chalk;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+h1
+{
+	position: absolute;
+	font-family: chalk;
+	top: 480px;
+	left: 420px;
+	font-size: 400%;
+}
+
+div
+{
+	 position:relative;
+	 text-align: center;
+}
+
+body
+{
+    background-image: url('../resource/home_background.jpg');
+    /*background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;*/
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    /* You may add things like width, height, background-size... */
+}

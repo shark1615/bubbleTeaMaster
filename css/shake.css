@@ -1,0 +1,171 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+
+body
+{
+    background-image: url('../resource/shake_background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /*z-index: -1;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);*/
+    font-family: "chalk";
+    font-size: 24px;
+}
+
+
+.btn
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: chalk;
+	
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 20px;
+	position: absolute;
+	width: 13%;
+}
+
+p{z-index: -1;}
+.btn:hover 
+{
+	background-color: #555555;
+	color: white;
+	
+}
+
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    position: absolute;
+    width:250px;
+    right:30px;
+    bottom:0px;
+    z-index: -1;
+    
+}
+
+#leftRightShake
+{
+    position: absolute;
+    left:15%;
+    top:30%;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+ 
+#topDownShake
+{
+    position: absolute;
+    left:30%;
+    top:30%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+#hardShake
+{
+    position: absolute;
+    left:45%;
+    top:30%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+#littleShake
+{
+    position: absolute;
+    left:60%;
+    top:30%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+#crazyShake
+{
+    position: absolute;
+    left:75%;
+    top:30%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+#leftRightShake:hover, #topDownShake:hover, #hardShake:hover, #opacityShake:hover, #littleShake:hover, #crazyShake:hover
+{
+    background-color: #555555;
+    color: white;
+
+}
+
+#animatePic
+{
+    position: relative;
+    z-index: 1;
+	left:0px;
+	top:0px;
+    height: 100%;
+    width: 100%;
+    animation-name:starAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+#shakeButton
+{
+    position: absolute;
+    left:55%;
+    top:80%;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 300px;
+    z-index: 3;
+}
+
+#shakeIMG
+{
+    position: absolute;
+    z-index: 4;
+    animation-name:shakeAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes starAnimation
+{
+    from {left:200px;bottom:-13px;opacity: 0.5;}
+   
+    to{left:25%;top:0px;opacity: 1;-webkit-transform:scale(1.8);width:50%;height:20%;}
+}
+
+@keyframes shakeAnimation
+{
+    from {left:55%;top:90%;-webkit-transform:scale(1);}
+   
+    to{left:60%;top:90%;-webkit-transform:scale(1.5);}
+}
+
+
+
+
