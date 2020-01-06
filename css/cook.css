@@ -1,0 +1,221 @@
+@font-face
+{
+	font-family: "chalk";
+	src: url(HanyiSentyChalk.ttf);
+}
+
+body
+{
+    background-image: url('../resource/cookBackground.jpg');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "chalk";
+    font-size: 24px;
+}
+
+
+
+
+.btn
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: chalk;
+	
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 20px;
+	position: absolute;
+	width: 13%;
+}
+
+.btn:hover 
+{
+	background-color: #555555;
+	color: white;
+	
+}
+
+div
+{
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 15%;
+}
+
+.pearl
+{
+	position: absolute;
+	top:10%;
+	left:6%;
+}
+
+.tea
+{
+	position: absolute;
+	top:55%;
+	left:6%;
+}
+.milk
+{
+    position: absolute;
+	top:10%;
+	left:26%;
+}
+.powder
+{
+	position: absolute;
+	top:55%;
+	left:26%;
+}
+
+.sugar
+{
+	position: absolute;
+	top:10%;
+	left:47%;
+}
+.ice
+{
+    position: absolute;
+	top:55%;
+	left:47%;
+}
+
+#pearlInput
+{
+    position: absolute;
+    top:1%;
+    left:-130px;    
+}
+
+#teaInput
+{
+    position: absolute;
+    top: 45%;
+    left: -130px;
+}
+
+#milkInput
+{
+    position: absolute;
+    top:1%;
+    left:180px;    
+}
+
+#powderInput
+{
+    position: absolute;
+    top: 45%;
+    left:180px;
+}
+
+#sugarInput
+{
+    position: absolute;
+    top:5%;
+    left:490px;    
+}
+
+#iceInput
+{
+    position: absolute;
+    top: 49%;
+    left: 490px;
+}
+
+
+.submit
+{
+	width:10%;
+	position: absolute;
+	top:600px;
+	left:82%;
+	font-size:19px;
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: #555555;
+	color: white;
+}
+
+.submit:hover
+{
+	background-color: white;
+	color: black;
+}
+
+.shop
+{
+	width:10%;
+	position: absolute;
+	top:600px;
+	left:70%;
+	font-size:19px;
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: #555555;
+	color: white;
+}
+
+.shop:hover
+{
+	background-color: white;
+	color: black;
+}
+
+.cheat
+{
+	width:5%;
+	position: absolute;
+	top:610px;
+	left:5%;
+	font-size:15px;
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: #555555;
+	color: white;
+}
+
+.cheat:hover
+{
+	background-color: white;
+	color: black;
+}
+
+#cheat
+{
+	position: absolute;
+	top:610px;
+	left:48%;
+}
+
+
+table
+{
+	position:absolute;
+	width:25%;
+	height:65%;
+	font-family: chalk;
+	font-size: 30px;
+	text-align:center;
+	font-weight: bold;
+	top:75px;
+	right: 110px;
+}
+tr:hover
+{
+	background-color: #ADD8E6;
+}
+
